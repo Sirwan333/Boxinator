@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: "dev"
+  main:
+    banner-mode: "off"
+
+---
+
+spring:
+  application:
+    name: demoservice
+  datasource:
+    username: root
+    password: S75009650234304s
+    url: jdbc:mysql://localhost:3306/boxinator?createDatabaseIfNotExist=true
+  config:
+    activate:
+      on-profile: dev
+server:
+  port: 8080
+
